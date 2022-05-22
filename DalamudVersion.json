@@ -10,12 +10,12 @@
         "version":"6.3.0.9",
         "changes":[
             {
-                "message":"测试XLL",
+                "message":"Dalamud_6.3.0.9",
                 "author":"me",
-                "sha":"cb5b3c9b29d19481145d2118de081cb282e8b6ab",
+                "sha":"27e6e33d56fe39a209957d2886ce01fac548a054",
                 "date":"2022-05-19T23:57:42"
             }
         ]
     },
-    "downloadUrl":"https://github.com/wozaiha/DalamudPlugins/raw/CustomRepo/dalamud/Release.zip"
+    "downloadUrl":"https://usc1.contabostorage.com/502609d7d8574bcb9aae0b6e6a170274:test/dalamud-artifact.zip"
 }
