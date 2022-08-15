@@ -13,9 +13,9 @@ jobs:
           ref: master
         
       - name: Upload OneDrive
-        uses: Loskh/onedrive-action@v0.7
+        uses: Loskh/onedrive-action@v0.8
         with:
-          folder: integrity
+          folder: /integrity
           upload_path: /downloads/XLFiles/integrity/
           redirect_uri: "https://file.ffxiv.wang/"
           client_id: ${{ secrets.CLIENT_ID }}
