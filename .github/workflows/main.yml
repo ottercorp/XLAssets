@@ -16,7 +16,7 @@ jobs:
         uses: Loskh/onedrive-action@v0.8
         with:
           folder: integrity
-          upload_path: /downloads/XLFiles/integrity/
+          upload_path: /downloads/XLFiles/
           redirect_uri: "https://file.ffxiv.wang/"
           client_id: ${{ secrets.CLIENT_ID }}
           client_secret: ${{ secrets.CLIENT_SECRET }}
