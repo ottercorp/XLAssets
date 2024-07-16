@@ -1,5 +1,8 @@
 name: Refresh XLWebServices
 on: 
+  push:
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
