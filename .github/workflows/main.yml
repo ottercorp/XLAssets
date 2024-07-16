@@ -1,26 +1,11 @@
-name: Publish to ffwang
-on:
-  push:
-    branches:
-      - master
+name: Refresh XLWebServices
+on: 
   workflow_dispatch:
-  
+
 jobs:
-  upload:
-    name: Publish to ffwang
+  generate:
+    name: Refresh Web Services
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v2
-        with:
-          ref: master
-        
-      - name: Upload OneDrive
-        uses: Loskh/onedrive-action@v0.8
-        with:
-          folder: integrity
-          upload_path: /downloads/XLFiles/
-          redirect_uri: "https://file.ffxiv.wang/"
-          client_id: ${{ secrets.CLIENT_ID }}
-          client_secret: ${{ secrets.CLIENT_SECRET }}
-          refresh_token: ${{ secrets.REFRESH_TOKEN }}  
+      - name: Clear Web Services cache
+        run: curl -X POST --fail https://aonyx.ffxiv.wang/Proxy/ClearCache?key=${{ secrets.CACHE_CLEAR_KEY }}
